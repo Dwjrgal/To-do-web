@@ -24,7 +24,7 @@
           <span></span>
           <h2>To do</h2>
         </div>
-        <div class="card text-white bg-dark b-none">
+        <div class="card text-white bg-dark b-none" id="taskTodoList">
           <div class="rec"></div>
           <p>[loan-managament]-Add <br />card component</p>
           <i class="fa-solid fa-pencil"></i>
@@ -40,7 +40,10 @@
             In progress
           </h2>
         </div>
-        <div class="card text-white bg-dark w-254px h-54px">
+        <div
+          class="card text-white bg-dark w-254px h-54px"
+          id="taskProgressList"
+        >
           <div class="rec"></div>
           <p>[loan-managament]-Add <br />card component</p>
           <i class="fa-solid fa-pencil"></i>
@@ -54,7 +57,7 @@
           <span></span>
           <h2>Done</h2>
         </div>
-        <div class="card text-white bg-dark">
+        <div class="card text-white bg-dark" id="taskDoneList">
           <div class="rec"></div>
           <p>[loan-managament]-Add <br />card component</p>
           <i class="fa-solid fa-pencil"></i>
@@ -64,6 +67,7 @@
     </div>
     <div class="container d-flex flex-column gap-3">
       <button
+        id="addTaskBtn"
         type="button"
         class="btn btn-success"
         data-bs-toggle="modal"
@@ -77,7 +81,7 @@
             <span></span>
             <h2>Blocked</h2>
           </div>
-          <div class="card text-white bg-dark">
+          <div class="card text-white bg-dark" id="taskBlockedList">
             <div class="rec"></div>
             <p>[loan-managament]-Add <br />card component</p>
             <i class="fa-solid fa-pencil"></i>
@@ -91,7 +95,7 @@
     <div class="modal fade" id="modal" tabindex="-1">
       <div class="modal-dialog">
         <div class="modal-content bg-dark text-white">
-          <div class="modal-header">
+          <div class="modal-header text-white">
             <h1 class="modal-title fs-5" id="exampleModalLabel">Enter task</h1>
             <button
               type="button"
@@ -102,7 +106,7 @@
           </div>
           <div class="modal-body bg-dark text-white">
             Task name
-            <form class="form-floating text">
+            <form class="form-floating text-white">
               <input
                 type="text"
                 class="form-control bg-dark text-white"
@@ -120,10 +124,10 @@
                 aria-label="Floating label select example"
               >
                 <option selected>Open this select menu</option>
-                <option value="1">To do</option>
-                <option value="2">In progress</option>
-                <option value="3">Done</option>
-                <option value="4">Blocked</option>
+                <option value="TODO">To do</option>
+                <option value="INPROGRESS">In progress</option>
+                <option value="DONE">Done</option>
+                <option value="BLOCKED">Blocked</option>
               </select>
             </div>
           </div>
