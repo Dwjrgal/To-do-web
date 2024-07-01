@@ -1,77 +1,77 @@
-*{
-    margin: 0;
+* {
+  margin: 0;
 }
 
-body{
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    background-color:rgb(50, 49, 49);
-    gap: 5px;
-    padding-left: 20px;
-    padding-right: 20px;
-    padding-top: 80px;
+body {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-color: rgb(50, 49, 49);
+  gap: 5px;
+  padding-left: 20px;
+  padding-right: 20px;
+  padding-top: 80px;
 }
 
-.btn{
-    margin-bottom: 10px;
+.btn {
+  margin-bottom: 10px;
 }
 
-.card-container{
-    width: 280px;
-    height: 670px;
-    border-radius: 12px;
+.card-container {
+  width: 280px;
+  height: 670px;
+  border-radius: 12px;
 }
 
-.card{
-    display: flex;
-    flex-direction: row;
-    text-align: center;
-    gap: 10px;
+.card {
+  display: flex;
+  flex-direction: row;
+  text-align: center;
+  gap: 10px;
 }
 
-.card span {
-    height: 18px;
-    width: 18px;
-    background-color: aliceblue;
-    border-radius: 50%;
-    margin-top: 10px;
-    margin-left: 10px;
+.dot {
+  height: 15px;
+  width: 15px;
+  background-color: aliceblue;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-.rec{
-    height: 12px;
-    width: 12px;
-    background-color: black;
-    border: solid white 1px;
-    border-radius: 50%;
-    margin-top: 10px;
-    margin-left: 10px;
+.rec {
+  height: 12px;
+  width: 12px;
+  background-color: black;
+  border: solid white 1px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-.card-2 span {
-    background-color: goldenrod;
-    height: 18px;
-    width: 18px;
-    border-radius: 50%;
-    margin-top: 10px;
-    margin-left: 10px;
+.card-2 .dot {
+  background-color: goldenrod;
+  height: 15px;
+  width: 15px;
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
-.card-4 span {
-    height: 18px;
-    width: 18px;
-    background-color: rgb(190, 15, 15);
-    border-radius: 50%;
-    margin-top: 10px;
-    margin-left: 10px;
+.card-4 .dot {
+  height: 15px;
+  width: 15px;
+  background-color: rgb(190, 15, 15);
+  border-radius: 50%;
+  margin-top: 10px;
+  margin-left: 10px;
 }
 
 .fa-solid {
-    margin-top: 10px;
-    font-size: 13px;
+  margin-top: 10px;
+  font-size: 13px;
 }
 
-.fa-trash-can{
-    color: rgb(231, 57, 57);
+.fa-trash-can {
+  color: rgb(231, 57, 57);
 }
