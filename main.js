@@ -30,7 +30,7 @@ function draw() {
   for (let i = 0; i < tasks.length; i++) {
     console.log("TASKS", tasks);
     const newTaskCard = `
-    <div class="d-flex justify-content-between align-items-center border border-1 rounded p-2">
+    <div class="d-flex justify-content-between align-items-center border border-1 rounded p-2 m-3">
     <span>${tasks[i].name}</span>
     <div>
         <button class="btn">

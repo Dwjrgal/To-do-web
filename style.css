@@ -29,8 +29,8 @@ body {
   text-align: center;
   gap: 10px;
 }
-/* 
-.card span {
+
+.dot {
   height: 15px;
   width: 15px;
   background-color: aliceblue;
@@ -49,7 +49,7 @@ body {
   margin-left: 10px;
 }
 
-.card-2 span {
+.card-2 .dot {
   background-color: goldenrod;
   height: 15px;
   width: 15px;
@@ -58,14 +58,14 @@ body {
   margin-left: 10px;
 }
 
-.card-4 span {
+.card-4 .dot {
   height: 15px;
   width: 15px;
   background-color: rgb(190, 15, 15);
   border-radius: 50%;
   margin-top: 10px;
   margin-left: 10px;
-} */
+}
 
 .fa-solid {
   margin-top: 10px;
