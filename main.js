@@ -34,10 +34,10 @@ function draw() {
     <span>${tasks[i].name}</span>
     <div>
         <button class="btn">
-        <i class="bi bi-pencil"></i>
+        <i class="bi bi-pencil text-white"></i>
         </button>
         <button class="btn">
-        <i class="bi bi-trash"></i>
+        <i class="bi bi-trash text-danger"></i>
         </button>
     </div>
     </div>
@@ -70,7 +70,7 @@ addTaskBtn.addEventListener("click", function () {
   console.log("newTask");
   tasks[1].status = "DONE";
   draw();
-  const newTask = { name: "hool hiih", status: "BLOCKED" };
+  const newTask = { name: "hool hiih", status: "INPROGRESS" };
   tasks.push(newTask);
   console.log("TASKS", tasks);
 });
