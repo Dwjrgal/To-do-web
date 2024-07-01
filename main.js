@@ -5,6 +5,8 @@ const taskDoneList = document.getElementById("taskDoneList");
 const taskBlockedList = document.getElementById("taskBlockedList");
 const addTaskBtn = document.getElementById("addTaskBtn");
 const saveBtn = document.getElementById("saveBtn");
+const taskInput = document.getElementById("floatingInputValue");
+const taskStatus = document.getElementById("floatingSelect")
 
 // VARIABLES FOR TASK
 const tasks = [
@@ -67,26 +69,15 @@ function draw() {
     }
   }
 }
-addTaskBtn.addEventListener("click", function () {
-  console.log("newTask");
-  tasks[1].status = "DONE";
+
+saveBtn.addEventListener("click", function () {
+    const newTask = {
+      name: taskInput.value,
+      status: taskStatus.value,
+    };
+    tasks.push(newTask);
+    draw();
+    console.log("TASKS", tasks);
+  });
+  
   draw();
-  const newTask = { name: "hool hiih", status: "INPROGRESS" };
-  tasks.push(newTask);
-  console.log("TASKS", tasks);
-});
-
-draw();
-// floatingInputValue.VALUE: "hool"
-
-// saveBtn.addEventListener("click", function () {
-//   const newTask = {
-//     name: taskInput.value,
-//     status: taskStatus.value,
-//   };
-//   tasks.push(newTask);
-//   zurah();
-//   console.log("TASKS", tasks);
-// });
-
-// zurah();
