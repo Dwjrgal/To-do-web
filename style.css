@@ -29,7 +29,7 @@ body {
   text-align: center;
   gap: 10px;
 }
-
+/* 
 .card span {
   height: 15px;
   width: 15px;
@@ -65,7 +65,7 @@ body {
   border-radius: 50%;
   margin-top: 10px;
   margin-left: 10px;
-}
+} */
 
 .fa-solid {
   margin-top: 10px;

@@ -66,11 +66,14 @@ function draw() {
     }
   }
 }
-
 addTaskBtn.addEventListener("click", function () {
+  console.log("newTask");
   tasks[1].status = "DONE";
   draw();
+  const newTask = { name: "hool hiih", status: "BLOCKED" };
+  tasks.push(newTask);
   console.log("TASKS", tasks);
 });
 
 draw();
+// floatingInputValue.VALUE: "hool"
