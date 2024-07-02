@@ -102,7 +102,7 @@ function getStatusColor(status) {
       return "border-warning";
     }
     case "DONE": {
-      return null;
+      return "border-success";
     }
     case "BLOCKED": {
       return "border-danger";
