@@ -6,7 +6,7 @@ const taskBlockedList = document.getElementById("taskBlockedList");
 const addTaskBtn = document.getElementById("addTaskBtn");
 const saveBtn = document.getElementById("saveBtn");
 const taskInput = document.getElementById("floatingInputValue");
-const taskStatus = document.getElementById("floatingSelect")
+const taskStatus = document.getElementById("floatingSelect");
 
 // VARIABLES FOR TASK
 const tasks = [
@@ -40,7 +40,7 @@ function draw() {
         <i class="bi bi-pencil text-white"></i>
         </button>
         <button class="btn">
-        <i class="bi bi-trash text-danger"></i>
+        <i class="bi bi-trash text-danger" onclick ="deleteTask(${i})"></i>
         </button>
     </div>
     </div>
@@ -71,13 +71,20 @@ function draw() {
 }
 
 saveBtn.addEventListener("click", function () {
-    const newTask = {
-      name: taskInput.value,
-      status: taskStatus.value,
-    };
-    tasks.push(newTask);
-    draw();
-    console.log("TASKS", tasks);
-  });
-  
+  const newTask = {
+    name: taskInput.value,
+    status: taskStatus.value,
+  };
+  tasks.push(newTask);
   draw();
+  console.log("TASKS", tasks);
+});
+
+draw();
+
+const deleteTask = (taskIndex) => {
+  console.log(tasks);
+  tasks.splice(taskIndex, 1);
+  draw();
+  console.log("Task deleted", taskIndex);
+};
