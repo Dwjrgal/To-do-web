@@ -21,7 +21,10 @@
           <div class="dot"></div>
           <h2 class="card title fs-3 bg-dark border-none text-white">To do</h2>
         </div>
-        <div class="card text-white bg-dark d-flex flex-column" id="taskTodoList">
+        <div
+          class="card text-white bg-dark d-flex flex-column"
+          id="taskTodoList"
+        >
           <div class="rec"></div>
         </div>
       </div>
@@ -56,28 +59,29 @@
         </div>
       </div>
     </div>
-    </div>
-    <div class="container">
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end d-flex flex-column">
-      <button
-        id="addTaskBtn"
-        type="button"
-        class="btn btn-success"
-        data-bs-toggle="modal"
-        data-bs-target="#modal"
-      >
-        Add task
-      </button>
+
+    <div class="end-section d-flex flex-column">
+      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+        <button
+          id="addTaskBtn"
+          type="button"
+          class="btn btn-success mx-2"
+          data-bs-toggle="modal"
+          data-bs-target="#modal"
+        >
+          Add task
+        </button>
       </div>
-    </div>
 
       <div class="container bg-dark,">
-        <div class="card-container bg-dark text-white">
+        <div class="card-container bg-dark text-white mb-5">
           <div class="card card-4 text-white bg-dark radius-12px">
             <div class="dot"></div>
-            <h2 class="card title fs-3 bg-dark border-none text-white">Blocked</h2>
+            <h2 class="card title fs-3 bg-dark border-none text-white">
+              Blocked
+            </h2>
           </div>
-          <div class="card text-white bg-dark d-flex flex-column" id="taskBlockedList">
+          <div class="card text-white bg-dark" id="taskBlockedList">
             <div class="rec"></div>
           </div>
         </div>
