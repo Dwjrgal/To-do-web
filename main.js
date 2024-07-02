@@ -33,7 +33,9 @@ function draw() {
   for (let i = 0; i < tasks.length; i++) {
     console.log("TASKS", tasks);
     const newTaskCard = `
-    <div class="d-flex justify-content-between align-items-center border border-1 rounded p-2 m-3">
+    <div class="d-flex justify-content-between align-items-center border border-1 rounded p-2 m-3 ${getStatusColor(
+      tasks[i].status
+    )}">
     <span>${tasks[i].name}</span>
     <div>
         <button class="btn">
@@ -88,3 +90,22 @@ const deleteTask = (taskIndex) => {
   draw();
   console.log("Task deleted", taskIndex);
 };
+
+//Change border color //
+
+function getStatusColor(status) {
+  switch (status) {
+    case "TODO": {
+      return null;
+    }
+    case "INPROGRESS": {
+      return "border-warning";
+    }
+    case "DONE": {
+      return null;
+    }
+    case "BLOCKED": {
+      return "border-danger";
+    }
+  }
+}
