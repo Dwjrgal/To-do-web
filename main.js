@@ -9,6 +9,9 @@ const taskInput = document.getElementById("floatingInputValue");
 const taskStatus = document.getElementById("floatingSelect");
 
 // VARIABLES FOR TASK
+let isEdited = false;
+let editedIndex = -1;
+
 const tasks = [
   {
     name: "Task One",
@@ -36,9 +39,9 @@ function draw() {
     <div class="d-flex justify-content-between align-items-center border border-1 rounded p-2 m-3 ${getStatusColor(
       tasks[i].status
     )}">
-    <span>${tasks[i].name}</span>
+    <span>${tasks[i].name}-${i}</span>
     <div>
-        <button class="btn">
+        <button class="btn" data-bs-toggle="modal" data-bs-target="#modal" onclick="taskEdit(${i})">
         <i class="bi bi-pencil text-white"></i>
         </button>
         <button class="btn">
@@ -72,23 +75,39 @@ function draw() {
   }
 }
 
-saveBtn.addEventListener("click", function () {
-  const newTask = {
-    name: taskInput.value,
-    status: taskStatus.value,
-  };
-  tasks.push(newTask);
-  draw();
-  console.log("TASKS", tasks);
-});
-
 draw();
+
+saveBtn.addEventListener("click", function () {
+  if (isEdited) {
+    tasks[editedIndex].name = taskInput.value;
+    tasks[editedIndex].status = taskStatus.value;
+    isEdited = false;
+  } else {
+    const newTask = {
+      name: taskInput.value,
+      status: taskStatus.value,
+    };
+    tasks.push(newTask);
+  }
+  taskInput.value = "";
+  taskStatus.value = "TODO";
+  zurah();
+});
 
 const deleteTask = (taskIndex) => {
   console.log(tasks);
   tasks.splice(taskIndex, 1);
   draw();
   console.log("Task deleted", taskIndex);
+};
+
+const taskEdit = (taskIndex) => {
+  console.log(taskIndex);
+  taskInput.value = tasks[taskIndex].name;
+  taskStatus.value = tasks[taskIndex].status;
+
+  isEdited = true;
+  editedIndex = taskIndex;
 };
 
 //Change border color //
