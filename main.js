@@ -91,7 +91,7 @@ saveBtn.addEventListener("click", function () {
   }
   taskInput.value = "";
   taskStatus.value = "TODO";
-  zurah();
+  draw();
 });
 
 const deleteTask = (taskIndex) => {
