@@ -15,74 +15,78 @@
     />
   </head>
   <body>
-    <div class="container">
-      <div class="card-container bg-dark text-white">
-        <div class="card card-1 text-white bg-dark radius-12px">
-          <div class="dot"></div>
-          <h2 class="card title fs-3 bg-dark border-none text-white">To do</h2>
-        </div>
-        <div
-          class="card text-white bg-dark d-flex flex-column"
-          id="taskTodoList"
-        >
-          <div class="rec"></div>
-        </div>
-      </div>
-    </div>
-    <div class="container bg-dark,">
-      <div class="card-container bg-dark text-white">
-        <div class="card card-2 text-white bg-dark radius-12px">
-          <div class="dot"></div>
-          <h2 class="card title fs-3 bg-dark border-none text-white">
-            In progress
-          </h2>
-        </div>
-        <div
-          class="card text-white bg-dark d-flex flex-column"
-          id="taskProgressList"
-        >
-          <div class="rec"></div>
-        </div>
-      </div>
-    </div>
-    <div class="container bg-dark,">
-      <div class="card-container bg-dark text-white">
-        <div class="card card-3 text-white bg-dark radius-12px">
-          <div class="dot"></div>
-          <h2 class="card title fs-3 bg-dark border-none text-white">Done</h2>
-        </div>
-        <div
-          class="card text-white bg-dark d-flex flex-column"
-          id="taskDoneList"
-        >
-          <div class="rec"></div>
-        </div>
-      </div>
-    </div>
-
-    <div class="end-section d-flex flex-column">
-      <div class="d-grid gap-2 d-md-flex justify-content-md-end">
-        <button
-          id="addTaskBtn"
-          type="button"
-          class="btn btn-success mx-2"
-          data-bs-toggle="modal"
-          data-bs-target="#modal"
-        >
-          Add task
-        </button>
-      </div>
-
-      <div class="container bg-dark,">
-        <div class="card-container bg-dark text-white mb-5">
-          <div class="card card-4 text-white bg-dark radius-12px">
+    <div class="hero d-flex justify-content-center align-items-center">
+      <div class="container">
+        <div class="card-container bg-dark text-white">
+          <div class="card card-1 text-white bg-dark radius-12px">
             <div class="dot"></div>
             <h2 class="card title fs-3 bg-dark border-none text-white">
-              Blocked
+              To do
             </h2>
           </div>
-          <div class="card text-white bg-dark" id="taskBlockedList">
+          <div
+            class="card text-white bg-dark d-flex flex-column"
+            id="taskTodoList"
+          >
             <div class="rec"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container bg-dark,">
+        <div class="card-container bg-dark text-white">
+          <div class="card card-2 text-white bg-dark radius-12px">
+            <div class="dot"></div>
+            <h2 class="card title fs-3 bg-dark border-none text-white">
+              In progress
+            </h2>
+          </div>
+          <div
+            class="card text-white bg-dark d-flex flex-column"
+            id="taskProgressList"
+          >
+            <div class="rec"></div>
+          </div>
+        </div>
+      </div>
+      <div class="container bg-dark,">
+        <div class="card-container bg-dark text-white">
+          <div class="card card-3 text-white bg-dark radius-12px">
+            <div class="dot"></div>
+            <h2 class="card title fs-3 bg-dark border-none text-white">Done</h2>
+          </div>
+          <div
+            class="card text-white bg-dark d-flex flex-column"
+            id="taskDoneList"
+          >
+            <div class="rec"></div>
+          </div>
+        </div>
+      </div>
+
+      <div class="end-section d-flex flex-column">
+        <div class="d-grid gap-2 d-md-flex justify-content-md-end">
+          <button
+            id="addTaskBtn"
+            type="button"
+            class="btn btn-success mx-2"
+            data-bs-toggle="modal"
+            data-bs-target="#modal"
+          >
+            Add task
+          </button>
+        </div>
+
+        <div class="container bg-dark,">
+          <div class="card-container bg-dark text-white mb-5">
+            <div class="card card-4 text-white bg-dark radius-12px">
+              <div class="dot"></div>
+              <h2 class="card title fs-3 bg-dark border-none text-white">
+                Blocked
+              </h2>
+            </div>
+            <div class="card text-white bg-dark" id="taskBlockedList">
+              <div class="rec"></div>
+            </div>
           </div>
         </div>
       </div>
