@@ -73,3 +73,8 @@ body {
 .fa-trash-can {
   color: rgb(231, 57, 57);
 }
+.badge {
+  height: 20px;
+  width: 20px;
+  text-align: center;
+}
